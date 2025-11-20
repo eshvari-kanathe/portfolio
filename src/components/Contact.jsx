@@ -5,8 +5,6 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    // For now, just show an alert
     alert('Message sent! (Connect to your backend to make it functional)');
     setFormData({ name: '', email: '', message: '' });
   };
@@ -15,7 +13,7 @@ export default function Contact() {
     <section id="contact" className="relative py-20 px-4">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-          Let's Work Together
+           Get in Touch
         </h2>
         <p className="text-gray-400 mb-8">
           I'm always open to discussing new projects and opportunities
