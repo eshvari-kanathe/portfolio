@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Code, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import React, { useState, useEffect } from 'react';
+import { Code, Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,34 +11,35 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-4"
+      className="relative min-h-screen flex items-center justify-center px-4 bg-[#0f0f13]"
     >
       <div
-        className={`text-center max-w-4xl mx-auto transform transition-all duration-1000 ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        className={`text-center max-w-4xl mx-auto transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
+
         <div className="mb-6 inline-block">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-spin-slow">
-            <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
+          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-[2px] animate-spin-slow">
+            <div className="w-full h-full rounded-full bg-[#1a1a1f] flex items-center justify-center shadow-md">
               <Code className="w-16 h-16 text-purple-400 drop-shadow-lg" />
             </div>
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
           Frontend Developer
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-          I develop responsive and high-performance UIs using React and Redux.
+        <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          I build clean, responsive, and user-focused interfaces using React, Redux & modern UI tools.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
             href="#projects"
-            className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold 
-            hover:shadow-lg hover:shadow-purple-500/40 transform hover:scale-105 transition-all duration-300"
+            className="px-8 py-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full 
+            font-semibold shadow-lg shadow-purple-600/20 hover:scale-105 transition-all"
           >
             View Projects
           </a>
@@ -46,45 +47,41 @@ export default function Hero() {
           <a
             href="#contact"
             className="px-8 py-3 border-2 border-purple-500 rounded-full font-semibold 
-            hover:bg-purple-500/10 transform hover:scale-105 transition-all duration-300"
+            text-purple-300 hover:bg-purple-500/10 hover:scale-105 transition-all"
           >
             Contact Me
           </a>
         </div>
 
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center gap-6 text-gray-300">
           <a
-            href="https://github.com/eshvari-kanathe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-purple-400 transform hover:scale-110 transition-all duration-300"
+            href="#"
+            className="hover:text-purple-400 hover:scale-110 transition-all"
           >
-            <Github className="w-6 h-6" />
+            <Github className="w-7 h-7" />
           </a>
 
           <a
-            href="https://linkedin.com/in/eshvari-kanathe-3502b32a4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-cyan-400 transform hover:scale-110 transition-all duration-300"
+            href="#"
+            className="hover:text-cyan-400 hover:scale-110 transition-all"
           >
-            <Linkedin className="w-6 h-6" />
+            <Linkedin className="w-7 h-7" />
           </a>
 
           <a
-            href="mailto:ishwarikanathe@gmail.com"
-            className="hover:text-pink-400 transform hover:scale-110 transition-all duration-300"
+            href="mailto:your.email@example.com"
+            className="hover:text-pink-400 hover:scale-110 transition-all"
           >
-            <Mail className="w-6 h-6" />
+            <Mail className="w-7 h-7" />
           </a>
         </div>
       </div>
 
       <a
         href="#skills"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-purple-400"
       >
-        <ChevronDown className="w-8 h-8 text-purple-400" />
+        <ChevronDown className="w-8 h-8" />
       </a>
     </section>
   );

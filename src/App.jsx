@@ -8,13 +8,19 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
-      </div>
+    <div className="min-h-screen bg-[#0f0f13] text-gray-200 overflow-x-hidden relative">
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-[450px] h-[450px] 
+          bg-purple-600/20 rounded-full blur-[150px] animate-pulse" />
 
+        <div className="absolute top-1/3 right-1/4 w-[450px] h-[450px] 
+          bg-cyan-500/20 rounded-full blur-[150px] animate-pulse 
+          [animation-delay:1s]" />
+
+        <div className="absolute bottom-1/4 left-1/3 w-[450px] h-[450px] 
+          bg-pink-500/20 rounded-full blur-[150px] animate-pulse 
+          [animation-delay:2s]" />
+      </div>
       <Navbar />
       <Hero />
       <Skills />
