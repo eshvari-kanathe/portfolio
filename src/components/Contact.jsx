@@ -15,7 +15,7 @@ export default function Contact() {
 
         <h2 className="text-4xl md:text-5xl font-bold mb-4 
           bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-          Let's Work Together
+          Get in touch
         </h2>
 
         <p className="text-gray-400 mb-10">
@@ -63,7 +63,7 @@ export default function Contact() {
             <button
               type="submit"
               className="w-full px-8 py-3 rounded-lg font-semibold 
-              bg-gradient-to-r from-purple-600 to-pink-600 
+              bg-gradient-to-r from-purple-800 to-pink-900 
               text-white shadow-lg shadow-purple-600/20 
               hover:scale-105 transition-transform duration-300"
             >

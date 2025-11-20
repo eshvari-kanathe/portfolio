@@ -8,21 +8,21 @@ export default function Projects() {
       desc: "Time tracking application where I implemented routing, UI enhancements, SCSS styling, and performance optimization.",
       tech: ["React", "SCSS", "Bootstrap", "Figma"],
       gradient: "from-purple-500 to-pink-500",
-      link: "", // No link → hides button
+      link: "", 
     },
     {
       title: "DevConnect Portal – Collaboration Platform",
       desc: "Developer collaboration platform with authentication, task tracking, Redux-based state management, and responsive UI.",
-      tech: ["React", "Redux", "Material UI", "REST APIs", "Vercel"],
+      tech: ["React", "Redux", "Material UI", "REST APIs"],
       gradient: "from-blue-500 to-cyan-500",
-      link: "", // No link → hides button
+      link: "", 
     },
     {
       title: "Portfolio Website",
       desc: "Personal portfolio built with modern UI, smooth animations, responsive design, and clean reusable components.",
       tech: ["React", "Tailwind CSS", "JavaScript"],
       gradient: "from-orange-500 to-red-500",
-      link: "https://yourportfolio.com", // Add your real portfolio link
+      link: "https://yourportfolio.com",
     },
   ];
 

@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          I build clean, responsive, and user-focused interfaces using React, Redux & modern UI tools.
+          Building clean, modern, and performance-focused UI experiences.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
