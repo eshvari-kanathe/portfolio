@@ -22,7 +22,7 @@ export default function Projects() {
       desc: "Personal portfolio built with modern UI, smooth animations, responsive design, and clean reusable components.",
       tech: ["React", "Tailwind CSS", "JavaScript"],
       gradient: "from-orange-500 to-red-500",
-      link: "https://yourportfolio.com",
+      link: "portfolio-eshvaris-projects.vercel.app",
     },
   ];
 
@@ -74,7 +74,6 @@ export default function Projects() {
                 {project.link && (
                   <a
                     href={project.link}
-                    target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-purple-400 hover:text-cyan-700 
                     transition-colors font-medium"
